@@ -1,3 +1,4 @@
+package cursoJava;
 import java.util.Locale;
 
 public class Exercicio1 {
