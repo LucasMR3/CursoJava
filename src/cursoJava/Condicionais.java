@@ -51,7 +51,7 @@ public class Condicionais {
 		
 		System.out.println((preco == 1) ? "Verdadeiro" : "False");
 		
-		// true:false
+		// operador ternario true:false
 		
 		sc.close();
 	}
