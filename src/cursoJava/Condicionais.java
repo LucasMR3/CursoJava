@@ -48,8 +48,11 @@ public class Condicionais {
 		
 		int preco = sc.nextInt();
 		
+		double juros = (preco < 20) ? preco * 1.10 : preco * 1.2;
 		
-		System.out.println((preco == 1) ? "Verdadeiro" : "False");
+//		System.out.println((preco == 1) ? "Verdadeiro" : "False");
+		
+		System.out.println(juros);
 		
 		// operador ternario true:false
 		
