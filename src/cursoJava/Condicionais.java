@@ -7,10 +7,10 @@ public class Condicionais {
 	private static Scanner sc;
 
 	public static void main(String[] args) {
-
+		
 		sc = new Scanner(System.in);
 
-		System.out.println("Horario em else-if");
+		System.out.println("Horario em else-if, digite: ");
 		int horario = sc.nextInt();
 
 		if (horario > 5 && horario <= 12) {
@@ -25,7 +25,7 @@ public class Condicionais {
 			System.out.println("Horario não reconhecido");
 		}
 
-		System.out.println("Dias Switch Case");
+		System.out.println("Dias Switch Case, digite:");
 		int dias = sc.nextInt();
 
 		switch (dias) {
@@ -46,15 +46,13 @@ public class Condicionais {
 			break;
 		}
 		
+		System.out.println("preco ternario, digite: ");
 		int preco = sc.nextInt();
 		
-		double juros = (preco < 20) ? preco * 1.10 : preco * 1.2;
-		
-//		System.out.println((preco == 1) ? "Verdadeiro" : "False");
+		double juros = (preco < 20)? preco * 1.1 : preco * 1.2;
+		// operador ternario true:false
 		
 		System.out.println(juros);
-		
-		// operador ternario true:false
 		
 		sc.close();
 	}
