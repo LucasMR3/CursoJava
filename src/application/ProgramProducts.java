@@ -22,6 +22,7 @@ public class ProgramProducts {
 		System.out.print("Quantity in stock: ");
 		product.quantity = sc.nextInt();
 		
+		//test-hotfix
 		
 		System.out.println(product);
 		
