@@ -3,15 +3,12 @@ package entities;
 public class Student {
 	public double studentGrade, gradeA, gradeB, gradeC;
 	public String nameStudent;
-	public Boolean isApproved;
+	public Boolean isApproved = false;
 
 	public void checkFinalGrade() {
 		studentGrade = gradeA + gradeB + gradeC;
-		if (studentGrade > 60) {
+		if (studentGrade >= 60)
 			isApproved = true;
-		} else {
-			isApproved = false;
-		}
 	}
 
 	public String toString() {

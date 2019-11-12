@@ -11,10 +11,10 @@ public class Employee {
 	}
 
 	public double increaseSalary(double value) {
-		return grossSalary = (((value/100) * (grossSalary + tax) + (grossSalary)));
+		return grossSalary = ((value/100) * (grossSalary + tax) + (grossSalary));
 	}
 
 	public String toString() {
-		return (name + ", $ " + grossSalary);
+		return (name + ", $ " + String.format("%.2f", grossSalary));
 	}
 }

@@ -28,7 +28,7 @@ public class EmployeeProgram {
 		System.out.print("Which percentage to increase salary? ");
 		double increase = sc.nextDouble();
 		employee.increaseSalary(increase);
-		System.out.println("Update data: " + String.format("%.2f",employee));
+		System.out.println("Update data: " + employee);
 		
 		sc.close();
 	}
