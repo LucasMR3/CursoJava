@@ -26,7 +26,6 @@ public class JavaFor {
 			x++;
 			System.out.printf("O valor eh: %d\n", x);
 		}
-
 		sc.close();
 	}
 
