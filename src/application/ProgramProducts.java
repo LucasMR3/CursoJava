@@ -34,8 +34,6 @@ public class ProgramProducts {
 		product.removeProducts(quantity);
 		System.out.printf("\n\nUpdated data: " + product);
 		
-		
-		
 		sc.close();
 	}
 }
