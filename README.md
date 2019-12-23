@@ -1,2 +1,2 @@
-# CursoJava
-Curso Java Udemy
+# Java
+Learning Java
