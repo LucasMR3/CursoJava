@@ -6,10 +6,15 @@ public class Account {
 	private String holder;
 	private double balance;
 
-	public Account(int number, String holder, double balance) {
+	public Account(int number, String holder, double initialDeposit) {
 		this.number = number;
 		this.holder = holder;
-		this.balance = balance;
+		deposit(initialDeposit); // encapsulamento
+	}
+	
+	public Account(int number, String holder) {
+		this.number = number;
+		this.holder = holder;
 	}
 
 	public int getNumber() {
@@ -27,15 +32,14 @@ public class Account {
 	public double getBalance() {
 		return balance;
 	}
-	
-	public void deposit (double value) {
+
+	public void deposit(double value) {
 		this.balance += value;
 	}
-	
-	public void withdraw (double value) {
-		this.balance -= (value + 5);
+
+	public void withdraw(double value) {
+		this.balance -= (value + 5.0);
 	}
-	
 
 	public String toString() {
 		return "Account " + number + ", Holder: " + holder + ", Balance: $ " + String.format("%.2f", balance);
