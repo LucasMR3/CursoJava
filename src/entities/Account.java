@@ -11,7 +11,7 @@ public class Account {
 		this.holder = holder;
 		deposit(initialDeposit); // encapsulamento
 	}
-	
+
 	public Account(int number, String holder) {
 		this.number = number;
 		this.holder = holder;

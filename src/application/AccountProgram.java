@@ -11,7 +11,7 @@ public class AccountProgram {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		Account account;
-		
+
 		System.out.print("Enter account Number: ");
 		int number = sc.nextInt();
 
@@ -21,14 +21,14 @@ public class AccountProgram {
 
 		System.out.print("Is there an initial deposit (y/n)? ");
 		char response = sc.next().charAt(0);
-	
+
 		double balance = 0.00;
 
 		if (response == 'y' || response == 'Y') {
 			System.out.print("Enter initial deposit value: ");
 			balance = sc.nextDouble();
 			account = new Account(number, holder, balance);
-		}else{
+		} else {
 			account = new Account(number, holder);
 		}
 

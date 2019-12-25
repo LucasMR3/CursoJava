@@ -3,7 +3,7 @@ package cursoJava;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
+public class Inicio {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
