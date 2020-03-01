@@ -14,7 +14,7 @@ public class ProgramStudent {
 		student.gradeA = sc.nextDouble();
 		student.gradeB = sc.nextDouble();
 		student.gradeC = sc.nextDouble();
-		
+
 		student.checkFinalGrade();
 		System.out.println(student);
 		
