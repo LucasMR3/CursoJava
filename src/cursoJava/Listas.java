@@ -38,11 +38,11 @@ public class Listas {
 		
 		
 		List<Number> linkedNumbers = new LinkedList<>();
-		linkedNumbers.add(new Integer(123));
-		linkedNumbers.add(new Integer(123));
-		linkedNumbers.add(new Float(3.1415));
-		linkedNumbers.add(new Double(299.988));
-		linkedNumbers.add(new Long(67000));
+		linkedNumbers.add(123);
+		linkedNumbers.add(123);
+		linkedNumbers.add(3.1415f);
+		linkedNumbers.add(299.988);
+		linkedNumbers.add(67000L);
 		
 		System.out.println(linkedNumbers);
 		
