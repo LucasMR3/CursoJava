@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Listas {
 
-	@SuppressWarnings("deprecation")
+
 	public static void main(String[] args) {
 		
 		List<String> listStrings = new ArrayList<String>();
