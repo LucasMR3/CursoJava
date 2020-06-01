@@ -5,16 +5,14 @@ import java.util.ArrayList;
 public class Cliente {
 
     String nome;
-    ArrayList<Conta> contas = new ArrayList<>();
-
+    private  ArrayList<Conta> carteira = new ArrayList<>();
 //    private Set<Conta> contas = new HashSet<>();
 
     public void adicionaConta(Conta contaAdded) {
-        contas.add(contaAdded);
+        carteira.add(contaAdded);
     }
 
     public ArrayList<Conta> getCarteira(){
-        return contas;
+        return carteira;
     }
-
 }

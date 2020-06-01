@@ -9,6 +9,8 @@ public class Main {
 
         Teste3.executa();
 
+        Teste4.executa();
+
         System.out.println("\n-\nfim!");
     }
 }
