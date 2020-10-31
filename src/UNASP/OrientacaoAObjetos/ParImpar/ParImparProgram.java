@@ -1,4 +1,6 @@
-package UNASP.ParImpar;
+package UNASP.OrientacaoAObjetos.ParImpar;
+
+import UNASP.OrientacaoAObjetos.ParImpar.ParImpar;
 
 import java.util.Scanner;
 

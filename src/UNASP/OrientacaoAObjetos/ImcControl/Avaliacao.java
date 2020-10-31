@@ -1,4 +1,4 @@
-package UNASP.ImcControl;
+package UNASP.OrientacaoAObjetos.ImcControl;
 
 public class Avaliacao {
     private float peso;

@@ -1,4 +1,4 @@
-package UNASP.ContaBancaria;
+package UNASP.OrientacaoAObjetos.ContaBancaria;
 
 public class Operacao {
 

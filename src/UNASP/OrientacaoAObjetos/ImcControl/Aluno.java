@@ -1,4 +1,4 @@
-package UNASP.ImcControl;
+package UNASP.OrientacaoAObjetos.ImcControl;
 
 public class Aluno {
     private String nome;

@@ -1,4 +1,4 @@
-package UNASP.ParImpar;
+package UNASP.OrientacaoAObjetos.ParImpar;
 public class ParImpar {
 
     //retorna true caso num seja par e false caso contrário

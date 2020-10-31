@@ -1,6 +1,4 @@
-package UNASP.ContaBancaria;
-
-import java.util.ArrayList;
+package UNASP.OrientacaoAObjetos.ContaBancaria;
 
 public class Informe {
 

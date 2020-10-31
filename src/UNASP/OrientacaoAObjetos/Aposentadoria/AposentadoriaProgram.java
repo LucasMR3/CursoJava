@@ -1,4 +1,4 @@
-package UNASP.Aposentadoria;
+package UNASP.OrientacaoAObjetos.Aposentadoria;
 
 public class AposentadoriaProgram {
 

@@ -10,4 +10,8 @@ public class Calculator {
 	public static double volume(double radius) {
 		return 4.0 * PI * radius * radius * radius / 3.0;
 	}
+
+	public static double roots (double root) {
+		return Math.sqrt(root);
+	}
 }
