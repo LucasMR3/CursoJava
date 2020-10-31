@@ -1,4 +1,4 @@
-package cursoJava;
+package learningJava;
 
 public class ForEach {
 

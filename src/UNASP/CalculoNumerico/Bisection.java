@@ -1,9 +1,7 @@
 package UNASP.CalculoNumerico;
 
-public class Bissecção {
+public class Bisection {
     public static void main(String[] args) {
-
-
 
     }
 }
