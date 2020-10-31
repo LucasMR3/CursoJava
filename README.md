@@ -1,2 +1,1 @@
-# learningJava
-Learning learningJava
+Learning Java

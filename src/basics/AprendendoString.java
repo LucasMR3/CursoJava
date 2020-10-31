@@ -1,4 +1,4 @@
-package learningJava;
+package basics;
 import java.util.Scanner;
 
 public class AprendendoString {

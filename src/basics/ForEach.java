@@ -1,4 +1,4 @@
-package learningJava;
+package basics;
 
 public class ForEach {
 
