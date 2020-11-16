@@ -7,7 +7,7 @@ public class NewtonRaphson {
         boolean stay = true;
 
         for (int i = 0; stay; i++) {
-            String format = "%.10f";
+            String format = "%.4f";
             String lastResult = String.format(format, x);
 
             x = x - ((2 * Math.pow(x, 3) + 3 * Math.pow(x, 2) - 2) / (6 * Math.pow(x, 2) + 6 * x));
