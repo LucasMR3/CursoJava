@@ -7,15 +7,16 @@ public class EvaluateExpressions {
         Scanner sc = new Scanner(System.in);
         double res = 1;
 
-        while (res != 0){
+        while (res != 0) {
             String evaluateExpression = sc.nextLine();
             res = Evaluator(evaluateExpression);
             System.out.println(res);
         }
     }
 
-    // SOURCE
-    // https://stackoverflow.com/questions/3422673/how-to-evaluate-a-math-expression-given-in-string-form
+// REFERENCE
+// https://stackoverflow.com/questions/3422673
+// /how-to-evaluate-a-math-expression-given-in-string-form
 
     public static double Evaluator(final String str) {
         return new Object() {
@@ -37,7 +38,7 @@ public class EvaluateExpressions {
             double parse() {
                 nextChar();
                 double x = parseExpression();
-                if (pos < str.length()) throw new RuntimeException("Unexpected: " + (char)ch);
+                if (pos < str.length()) throw new RuntimeException("Unexpected: " + (char) ch);
                 return x;
             }
 
@@ -49,8 +50,8 @@ public class EvaluateExpressions {
 
             double parseExpression() {
                 double x = parseTerm();
-                for (;;) {
-                    if      (eat('+')) x += parseTerm(); // addition
+                for (; ; ) {
+                    if (eat('+')) x += parseTerm(); // addition
                     else if (eat('-')) x -= parseTerm(); // subtraction
                     else return x;
                 }
@@ -58,8 +59,8 @@ public class EvaluateExpressions {
 
             double parseTerm() {
                 double x = parseFactor();
-                for (;;) {
-                    if      (eat('*')) x *= parseFactor(); // multiplication
+                for (; ; ) {
+                    if (eat('*')) x *= parseFactor(); // multiplication
                     else if (eat('/')) x /= parseFactor(); // division
                     else return x;
                 }
@@ -81,13 +82,24 @@ public class EvaluateExpressions {
                     while (ch >= 'a' && ch <= 'z') nextChar();
                     String func = str.substring(startPos, this.pos);
                     x = parseFactor();
-                    if (func.equals("sqrt")) x = Math.sqrt(x);
-                    else if (func.equals("sin")) x = Math.sin(Math.toRadians(x));
-                    else if (func.equals("cos")) x = Math.cos(Math.toRadians(x));
-                    else if (func.equals("tan")) x = Math.tan(Math.toRadians(x));
-                    else throw new RuntimeException("Unknown function: " + func);
+                    switch (func) {
+                        case "sqrt":
+                            x = Math.sqrt(x);
+                            break;
+                        case "sin":
+                            x = Math.sin(Math.toRadians(x));
+                            break;
+                        case "cos":
+                            x = Math.cos(Math.toRadians(x));
+                            break;
+                        case "tan":
+                            x = Math.tan(Math.toRadians(x));
+                            break;
+                        default:
+                            throw new RuntimeException("Unknown function: " + func);
+                    }
                 } else {
-                    throw new RuntimeException("Unexpected: " + (char)ch);
+                    throw new RuntimeException("Unexpected: " + (char) ch);
                 }
 
                 if (eat('^')) x = Math.pow(x, parseFactor()); // exponentiation
